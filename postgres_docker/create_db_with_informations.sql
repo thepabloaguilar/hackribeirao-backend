@@ -49,6 +49,9 @@ CREATE TABLE answer(
     CONSTRAINT fk_answer_question_id FOREIGN KEY(question_id) REFERENCES question(id)
 );
 
+INSERT INTO student_user(name, password, birth_date, gender, ra, telephone_number, email, mother_name, father_name)
+VALUES('Teste User', '$pbkdf2-sha256$29000$5rx3jtF6L4XwXotRyjnHeA$VGe3DfEnws5tQudpkhg60DVNz1MccfVMPul0y5aXPxU', '2018-01-01', 'M', '123456', '987654321', 'teste3@teste.com.br', 'Teste Mae', 'Teste Pai');
+
 INSERT INTO question_type(type) VALUES('classroom');
 INSERT INTO question_type(type) VALUES('entertainment');
 INSERT INTO question_type(type) VALUES('school_problems');

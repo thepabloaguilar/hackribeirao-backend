@@ -7,6 +7,7 @@ from ..model.answer import Answer
 from ..parsers import get_questions, post_answer
 from ..security import auth_token_required
 
+
 class QuestionResource(Resource):
 
     def _format_options(self, questions):
