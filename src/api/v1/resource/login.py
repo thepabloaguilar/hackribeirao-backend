@@ -1,6 +1,5 @@
 from flask import abort
 from flask_restful import Resource
-from flasgger import swag_from
 
 from ..security import encrypt_password, check_encrypted_password, \
     generate_auth_token
