@@ -29,3 +29,7 @@ get_questions.add_argument('question_type', type=str,
 post_answer = reqparse.RequestParser()
 post_answer.add_argument('question_id', type=str)
 post_answer.add_argument('answer', type=str)
+
+post_project = reqparse.RequestParser()
+post_project.add_argument('name', type=str)
+post_project.add_argument('description', type=str)
